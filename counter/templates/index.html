@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Counter App</title>
+  </head>
+  <body>
+    <h1>Counter: {{ counter }}</h1>
+    <form action="/increment" method="POST">
+      <button type="submit">Add to Counter</button>
+    </form>
+    <form action="/destroy_session" method="GET">
+      <button type="submit">Destroy Session</button>
+    </form>
+  </body>
+</html>
