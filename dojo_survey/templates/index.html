@@ -33,7 +33,7 @@
     <select name = "language" class="form-select mb-3" aria-label="Default select example">
       <option selected>Favorite Language: </option>
       {% for language in languages %}
-      <option value="{{language}}">{{language.capitalize}}</option>
+      <option value="{{language}}">{{language.capitalize()}}</option>
         
       {% endfor %}
       <!-- <option value="javascript">Javascript</option>

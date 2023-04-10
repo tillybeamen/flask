@@ -3,8 +3,8 @@ from flask import Flask, render_template, redirect, session, request #import fla
 app = Flask(__name__)
 app.secret_key = "any string you want"
 
-languages = ["Python, Javascript, C#, Java, Ruby"]
-locations = ["Oakland, Chicago, New York, Paris, Dubai"]
+languages = ["Python", "Javascript", "C#", "Java", "Ruby"]
+locations = ["Oakland", "Chicago", "New York", "Paris", "Dubai"]
 
 @app.route('/')        #the "@" decorator associates this route with the function imeediately following
 def index():
