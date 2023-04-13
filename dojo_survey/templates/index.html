@@ -9,8 +9,7 @@
 </head>
 <body>
 
-  {{languages}}
-  {{locations}}
+
 <div class="container mt-5 bg-body-secondary">
 <form action="/handle_form" method="post">
 
@@ -22,7 +21,7 @@
   <select name = "location" class="form-select mb-3" aria-label="Default select example">
     <option selected>Dojo Location: </option>
     {% for location in locations %}
-    <option value="{{location}}">{{location.capitalize}}</option>
+    <option value="{{location}}">{{location.capitalize()}}</option>
       
     {% endfor %}
     <!-- <option value="chicago">Chicago</option>
